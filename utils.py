@@ -83,4 +83,4 @@ def mean(s):
     -0.5
     """
     assert len(s) > 0, 'cannot find mean of empty sequence'
-    return sum(s) / len(s)
+    return [sum(l)/len(l) for l in zip(*s)]
